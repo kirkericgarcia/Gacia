@@ -7,28 +7,22 @@ function calc(){
     firstNumber = Number(firstNumber);
     secondNumber = Number(secondNumber);
 
-    answer = document getElementById("answer);
+    let answer = document.getElementById("answer")
     answer.style.color = "yellow"
 
-
 switch(operator){
-    
-    case '+':
-        answer.innerHTML = firstNumber + secondNumber;
+     case '+':
+        document.getElementById("answer").innerHTML = firstNumber + secondNumber;
         break;
-     
     case '-':
-        answer.innerHTML = firstNumber - secondNumber;
+        document.getElementById("answer").innerHTML = firstNumber - secondNumber;
         break;
-
     case '*':
-        answer.innerHTML = firstNumber * secondNumber;
+        document.getElementById("answer").innerHTML = firstNumber * secondNumber;
         break;
-
     case '/':
-       answer.innerHTML =firstNumber / secondNumber;
+        document.getElementById("answer").innerHTML =firstNumber / secondNumber;
         break;
-
     default:
         answer.style.color = "red"
 	document.getElementById("answer").innerHTML = "INCORRECT "    
